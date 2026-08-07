@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci          # use `npm install` if you don't commit a lockfile
+      - run: npm install          # use `npm install` if you don't commit a lockfile
       - run: npm run dist
       - uses: actions/upload-artifact@v4
         with:
